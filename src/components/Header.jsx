@@ -8,7 +8,7 @@ function Header() {
   return (
     <Navbar className='border-b-2'>
 <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
-  <span className='px-2 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+  <span className='px-2 py-2 bg-gradient-to-r from-yellow-500 via-orange-500 to-pink-500
    rounded-lg text-white'>Nishita's</span>
   Blog
 </Link>
@@ -28,7 +28,7 @@ function Header() {
 <FaMoon/>
   </Button>
   <Link to='/sign-in'>
-    <Button gradientDuoTone='purpleToBlue' >
+    <Button gradientDuoTone='pinkToOrange' >
       Sign In
     </Button>
   </Link>
@@ -45,7 +45,7 @@ Home
 About
       </Link>
     </Navbar.Link>
-    <Navbar.Link active={path==='/projects'} as={'div'}>
+    <Navbar.Link active={path==='/projects'} >
       <Link to='/projects'>
 Projects
       </Link>
